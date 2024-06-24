@@ -1,0 +1,89 @@
+*{
+    margin: unset;
+    height: unset;
+    padding: unset;
+}
+body{
+    background-color: #969595;
+}
+header{
+    display: flex;
+    margin: 5%;
+}
+nav{
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    margin-left: 75%;
+}
+.language-dropdown {
+    position: relative; 
+  }
+  
+  .select {
+    padding: 5px 10px;
+    border: 1px solid #06c9cf;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  ol{
+    list-style: none;
+  }
+  .select:after {
+    content: "\025BC"; 
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+  
+  main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* .intro{
+
+  } */
+  h1{
+    color: rgb(0, 255, 34);
+    font-size: 80px;
+  }
+  h3{
+    font-size: 30px;
+    margin-left: 100px;
+  }
+  footer {
+    margin-left:  80%;
+    align-items: flex-end;
+    display: flex; /* Enable flexbox for positioning */
+    justify-content: left; /* Align content to the left */
+    padding: 10px; /* Add some padding */
+  }
+  
+  button {
+    width: 100%;
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Indicate clickable element */
+    position: relative; /* Enable positioning for the arrow */
+  }
+  
+  button:after {
+    content: ""; /* Empty content for the arrow */
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent; /* Left border for arrow */
+    border-right: 5px solid transparent; /* Right border for arrow */
+    border-bottom: 10px solid #4CAF50; /* Bottom border for arrow (same color as button) */
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Adjust arrow position as needed */
+    transform: translateY(-50%); /* Center the arrow vertically */
+  }
+  

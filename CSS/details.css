@@ -1,0 +1,9 @@
+button{
+    width: 40%;
+    height: 20vh;
+    color: rgb(226, 53, 53);
+    font-size: 20px;
+    border: chartreuse;
+    border-radius: 20px;
+    margin: 30px;
+}
