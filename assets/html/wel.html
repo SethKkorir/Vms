@@ -3,34 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Website Title</title>
+  <title>Welcome to Ebrad</title>
   <link rel="stylesheet" href="/assets/css/wel.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <div class="logo">logo</div>
-    <nav>
-      <ol>
-        <li class="language-dropdown">
-          <select name="language" id="language" class="select">
-            <option value="en" selected>English</option>
-            <option value="hi">Hindi (हिंदी)</option>
-            <option value="zh">Chinese (中文)</option>
-          </select>
-        </li>
-      </ol>
-    </nav>  
-  </header>
+  <section class="backg">
+    <video autoplay muted loop id="bgVideo">
+      <source src="/assets/video/4428752-uhd_3840_2160_25fps.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+  </section>
   <main>
     <section class="intro">
       <h1>Welcome to Ebrad!</h1>
-      <h3>We Are Glad That You Have Come </h3>
-      <p></p>
+      <h3>Please Check-in To Continue</h3>
     </section>
   </main>
   <footer>
-    <button type="button" onclick="" >Get Started</button>
+    <button type="button" onclick="location.href='/assets/html/details.html'"><b>Check-in</b></button>
   </footer>
 </body>
 </html>

@@ -1,89 +1,87 @@
-*{
-    margin: unset;
-    height: unset;
-    padding: unset;
+* {
+  margin: unset;
+  padding: unset;
 }
-body{
-    background-color: #969595;
-}
-header{
-    display: flex;
-    margin: 5%;
-}
-nav{
-    display: flex;
-    justify-content: left;
-    align-items: flex-end;
-    margin-left: 75%;
-}
-.language-dropdown {
-    position: relative; 
-  }
-  
-  .select {
-    padding: 5px 10px;
-    border: 1px solid #06c9cf;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  ol{
-    list-style: none;
-  }
-  .select:after {
-    content: "\025BC"; 
-    font-size: 12px;
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-  }
-  
-  main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  /* .intro{
 
-  } */
-  h1{
-    color: rgb(0, 255, 34);
-    font-size: 80px;
-  }
-  h3{
-    font-size: 30px;
-    margin-left: 100px;
-  }
-  footer {
-    margin-left:  80%;
-    align-items: flex-end;
-    display: flex; /* Enable flexbox for positioning */
-    justify-content: left; /* Align content to the left */
-    padding: 10px; /* Add some padding */
-  }
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.backg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+#bgVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+
+main {
+
+  text-align: center;
+  padding: 50px;
+
+
+.intro h1 {
+  margin-top: 10%;
+  font-size: 70px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+}
+
+.intro h3 {
+  font-size: 29px;
+  margin-bottom: 20px;
+  padding-top: 40px;
+  color: aliceblue;
   
-  button {
-    width: 100%;
-    background-color: #4CAF50; /* Green color */
-    color: white;
-    padding: 10px 20px; /* Adjust padding as needed */
-    border: none;
-    border-radius: 4px; /* Rounded corners */
-    cursor: pointer; /* Indicate clickable element */
-    position: relative; /* Enable positioning for the arrow */
-  }
+}
+
+#dateTime {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+footer {
+  position: absolute;
+  left: 44%;
+}
+
+button {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   
-  button:after {
-    content: ""; /* Empty content for the arrow */
-    width: 0; 
-    height: 0; 
-    border-left: 5px solid transparent; /* Left border for arrow */
-    border-right: 5px solid transparent; /* Right border for arrow */
-    border-bottom: 10px solid #4CAF50; /* Bottom border for arrow (same color as button) */
-    position: absolute;
-    top: 50%;
-    right: 10px; /* Adjust arrow position as needed */
-    transform: translateY(-50%); /* Center the arrow vertically */
-  }
-  
+  padding-left:  20px;
+  padding-right: 20px;
+  font-size: 30px;
+  margin-top: 20px;
+  width: 100%;
+  height: 10vh;
+  border: none;
+  border-radius: 10px;
+  background-color: teal;
+}
+
+button:hover {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  /* border: 5px solid rgb(56, 55, 19); */
+  box-shadow:  30px 30px 30px 30px  rgb(0, 0, 0);
+  background: green;
+  cursor: pointer;
+}
